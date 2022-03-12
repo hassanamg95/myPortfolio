@@ -1,0 +1,390 @@
+include _head
+.bg__video
+  video.bg__video_content(autoplay='' muted='' loop='')
+    source(src='images/background_video.mp4' type='video/mp4')
+    source(src='images/background_video.webm' type='video/webm')
+#card.card__container
+  header#header
+    //
+      <button class="menu__btn menu__active">
+      <i class="fa-solid fa-bars"></i>
+      </button>
+    nav#nav-menu
+      ul.menu__lists
+        li.menu__list_link.menu__link--active(data-slide='0')
+          a.menu__links(href='' style='margin-bottom:20px ;')
+            // <img class="menu__links_img" src="icons/user.svg">
+            i.fa-solid.fa-user.menu__links_icon
+            |                                    About
+        li.menu__list_link(data-slide='1')
+          a.menu__links(href='')
+            // <img class="menu__links_img" src="icons/resume.svg">
+            i.fa-solid.fa-book.menu__links_icon
+            |                                 Resume
+        li.menu__list_link(data-slide='2')
+          a.menu__links(href='')
+            // <img class="menu__links_img" src="icons/works.svg">
+            i.fa-solid.fa-briefcase.menu__links_icon
+            |                             Works
+        li.menu__list_link(data-slide='3')
+          a.menu__links(href='')
+            // <img class="menu__links_img" src="icons/contact.svg">
+            i.fa-regular.fa-envelope.menu__links_icon
+            |                             Contact
+  #overview.static__side
+    .static__side__overlay
+      // <img src="images/image__me_1.JPG">
+    .static--side__infos
+      h1 Amgharid Hassan
+      span.static__side_skills
+      ul.social__lists
+        a(href='#facebook')
+          li.social__icon
+            img(src='icons/facebook.svg')
+        a(href='#github')
+          li.social__icon
+            img(src='icons/github.svg')
+        a(href='#instagram')
+          li.social__icon
+            img(src='icons/instagram.svg')
+        a(href='#linkedin')
+          li.social__icon
+            img(src='icons/linkedin.svg')
+      .action__btn
+        button#download.download__cv Download cv
+        button#contact.contact Contact
+  #content.slider
+    .slide.content__about.animate(data-slide='0')
+      section#about.section
+        #title.section__title
+          h2
+            span.highlights A
+            | bout
+        .sub__section.about__container
+          .about__profile
+            h3.presentation Hello ! I am Hassan Amgharid
+            p
+              | Developer passionate about new technologies and the world of the web, I specialize in the development of dynamic and static sites
+          .about__details_container
+            .detail
+              span Age
+              span 26
+            .detail
+              span Resedence
+              span Morocco
+            .detail
+              span Freelance
+              span Available
+            .detail
+              span Address
+              span Agadir, Morocco
+      section#services.section
+        #title.section__title
+          h2
+            span.highlights S
+            | ervices
+        .sub-section.services__container
+          .service
+            .service__icon
+              img.service__work_icon(src='icons/coding.svg')
+            .service__overview
+              h3 Web development
+              p
+                | Building static &amp; dynamic websites that are responsive
+                | and adaptable to various devices using PHP or NodeJS as backend technologies
+          .service
+            .service__icon
+              img.service__work_icon(src='icons/shopify.svg')
+            .service__overview
+              h3 Shopify development
+              p
+                | Experienced in creating shopify stores and customize the theme from code using liquide ,
+                | html ,css and i can doing listing products ,
+                | installing plugins etc
+          .service
+            .service__icon
+              img.service__work_icon(src='icons/Voice.svg')
+            .service__overview
+              h3 Voice Recording
+              p
+                | I can do a high level and high quality voice recording
+                | for your business needs in Arabic, English or French
+          .service
+            .service__icon
+              img.service__work_icon(src='icons/montage.svg')
+            .service__overview
+              h3 Video Montage
+              p
+                | Montage of e-commerce products for use in Facebook ads, Youtube ...
+      section#pricing.section
+        #title.section__title
+          h2
+            span.highlights P
+            | ricing
+        .sub-section.pricing__container
+          .plan.plan_basic
+            .basic
+              img.speedo__metter(src='icons/speed-metter.svg')
+              h6(style='margin-top: -25px;') Basic
+            .pricing__per_hour
+              h4.currency
+                span $
+                span 18
+              span.per__hour hour
+            ul.basic__list
+              li Web development
+              li Shopify Creation
+              li Shopify Product Listing
+              li.disable Voice recording
+              li.disable Video montage
+          .plan.plan_pro
+            .pro
+              img.speedo__metter(src='icons/speed-metter.svg')
+              h6(style='margin-top: -25px;') Pro
+            .pricing__per_hour
+              h4.currency
+                span $
+                span 25
+              span.per__hour hour
+            ul.pro__list
+              li Web development
+              li Shopify Creation
+              li Shopify Product Listing
+              li Voice recording
+              li Video montage
+    .slide.animate(data-slide='1')
+      section#resume
+        #title.section__title
+          h2
+            span.highlights R
+            | esume
+        .sub-section.resume__container
+          .experiences
+            .experience__title__icon.title__icon
+              img(src='icons/experience.svg')
+              h2(style='margin: auto 0;') Experiences
+            .experience__detail
+              span.date__betw.experience--date__active 2021
+              h3 Web project using HTML, CSS, JavaScript
+              p
+                | A website with simple functionalities (Sliding,
+                | Tabbed component, Sticky navigation) using Html, CSS,
+                | JS
+              p
+                | Responsive and adabtable site with all devices
+            .experience__detail
+              span.date__betw.experience--date__active 2022
+              h3 Web application using HTML, CSS, JavaScript OOP
+              p
+                | Web application that takes inputs based on workout type from
+                | the user and displays them on the map
+          .education(style='margin-left: 20px;')
+            .education__title__icon.title__icon
+              img(src='icons/education.svg')
+              h2(style='margin: auto 0;') Education
+            .education__detail
+              span.date__betw.education--date__active 2015 - 2016
+              h3 Baccalaureate Diploma in Physics and Chemistry
+              p
+                | Obtaining a baccalaureate in physics and chemistry at
+                | the Med Zerktouni high school - Agadir
+            .education__detail
+              span.date__betw.education--date__active 2016 - 2018
+              h3 BA +2 in Chemistry
+              p
+                | I studied the chemestry and obtention of BA+2 at the university IBn Zohr - Agadir
+            .education__detail
+              span.date__betw.education--date__active 2019 - 2021
+              h3 IT Development Diploma
+              p
+                | ISTA: Specialized Institute of Applied Technologies - Agadir
+            .education__detail
+              span.date__betw.education--date__active 2021
+              h3 Online Certificat
+              p
+                | Certificat Microsoft Office - Speciality Word
+      section#skills
+        #title.section__title
+          h2
+            span.highlights S
+            | kills
+        .sub-section.skills__container
+          .designs
+            .design__title__icon.title__icon
+              img(height='100' src='icons/lamp.svg')
+              h2(style='margin: auto 0;') Design
+            ul.design__list
+              li
+                h3 Web design
+                .progress-container
+                  .progress
+                    .progress-bar(data-percent='60' style='width: 60%;')
+                      span.progress-label 60%
+              li
+                h3 Photoshop
+                .progress-container
+                  .progress
+                    .progress-bar(data-percent='75' style='width: 75%;')
+                      span.progress-label 75%
+              li
+                h3 Graphic Design
+                .progress-container
+                  .progress
+                    .progress-bar(data-percent='50' style='width: 50%;')
+                      span.progress-label 50%
+          .languages
+            .langs__title__icon.title__icon
+              img(height='100' src='icons/translate.svg')
+              h2(style='margin: auto 0;') Languages
+            ul.langs__list
+              li
+                h3 Arabic
+              li
+                h3 Enlish
+              li
+                h3 French
+          .coding
+            .coding__title__icon.title__icon
+              img(src='icons/coding.svg')
+              h2(style='margin: auto 0;') Coding
+            ul.coding__list.container__list
+              li
+                .progress-circle
+                  span.title.timer(data-from='0' data-to='70' data-speed='1500') 70
+                  .progress-overlay
+                  .left
+                  .php-progress
+                h3 PHP
+              li
+                .progress-circle
+                  span.title.timer(data-from='0' data-to='80' data-speed='1800') 80
+                  .progress-overlay
+                  .left
+                  .js-progress
+                h3 Javascript
+              li
+                .progress-circle
+                  span.title.timer(data-from='0' data-to='90' data-speed='1800') 90
+                  .progress-overlay
+                  .left
+                  .html-css-progress
+                h3 Html/Css
+              li
+                .progress-circle
+                  span.title.timer(data-from='0' data-to='85' data-speed='1800') 85
+                  .progress-overlay
+                  .left
+                  .nodejs-progress
+                h3 Node js
+              li
+                .progress-circle
+                  span.title.timer(data-from='0' data-to='57' data-speed='1800') 57
+                  .progress-overlay
+                  .left
+                  .shopify-progress
+                h3 Shopify liquide
+          .knowledge
+            .knowledge__title__icon.title__icon
+              img(height='100' src='icons/paper-text.svg')
+              h2(style='margin: auto 0;')
+                | Knowledge
+            ul.knwoledge__list.container__list
+              li
+                svg(xmlns='http://www.w3.org/2000/svg' width='45' viewbox='0 0 45 45' height='45' version='1.0')
+                  defs
+                    clippath#a
+                      path(d='M 13.5 16.503906 L 31.5 16.503906 L 31.5 28.503906 L 13.5 28.503906 Z M 13.5 16.503906')
+                  path(fill='#FFF' d='M-4.5 -4.5H49.5V49.5H-4.5z')
+                  path(fill='#FFF' d='M-4.5 -4.5H49.5V49.5H-4.5z')
+                  g(clip-path='url(#a)')
+                    path(fill='#7ED957' d='M 19.921875 28.523438 C 19.707031 28.523438 19.492188 28.441406 19.328125 28.277344 L 14.195312 23.140625 C 13.867188 22.8125 13.867188 22.28125 14.195312 21.953125 C 14.523438 21.625 15.050781 21.625 15.378906 21.953125 L 19.921875 26.5 L 29.597656 16.8125 C 29.925781 16.484375 30.457031 16.484375 30.785156 16.8125 C 31.113281 17.140625 31.113281 17.671875 30.785156 18 L 20.515625 28.277344 C 20.351562 28.441406 20.136719 28.523438 19.921875 28.523438 Z M 19.921875 28.523438')
+                h3 Web hosting
+              li
+                svg(xmlns='http://www.w3.org/2000/svg' width='45' viewbox='0 0 45 45' height='45' version='1.0')
+                  defs
+                    clippath#a
+                      path(d='M 13.5 16.503906 L 31.5 16.503906 L 31.5 28.503906 L 13.5 28.503906 Z M 13.5 16.503906')
+                  path(fill='#FFF' d='M-4.5 -4.5H49.5V49.5H-4.5z')
+                  path(fill='#FFF' d='M-4.5 -4.5H49.5V49.5H-4.5z')
+                  g(clip-path='url(#a)')
+                    path(fill='#7ED957' d='M 19.921875 28.523438 C 19.707031 28.523438 19.492188 28.441406 19.328125 28.277344 L 14.195312 23.140625 C 13.867188 22.8125 13.867188 22.28125 14.195312 21.953125 C 14.523438 21.625 15.050781 21.625 15.378906 21.953125 L 19.921875 26.5 L 29.597656 16.8125 C 29.925781 16.484375 30.457031 16.484375 30.785156 16.8125 C 31.113281 17.140625 31.113281 17.671875 30.785156 18 L 20.515625 28.277344 C 20.351562 28.441406 20.136719 28.523438 19.921875 28.523438 Z M 19.921875 28.523438')
+                h3 Create logo design
+              li
+                svg(xmlns='http://www.w3.org/2000/svg' width='45' viewbox='0 0 45 45' height='45' version='1.0')
+                  defs
+                    clippath#a
+                      path(d='M 13.5 16.503906 L 31.5 16.503906 L 31.5 28.503906 L 13.5 28.503906 Z M 13.5 16.503906')
+                  path(fill='#FFF' d='M-4.5 -4.5H49.5V49.5H-4.5z')
+                  path(fill='#FFF' d='M-4.5 -4.5H49.5V49.5H-4.5z')
+                  g(clip-path='url(#a)')
+                    path(fill='#7ED957' d='M 19.921875 28.523438 C 19.707031 28.523438 19.492188 28.441406 19.328125 28.277344 L 14.195312 23.140625 C 13.867188 22.8125 13.867188 22.28125 14.195312 21.953125 C 14.523438 21.625 15.050781 21.625 15.378906 21.953125 L 19.921875 26.5 L 29.597656 16.8125 C 29.925781 16.484375 30.457031 16.484375 30.785156 16.8125 C 31.113281 17.140625 31.113281 17.671875 30.785156 18 L 20.515625 28.277344 C 20.351562 28.441406 20.136719 28.523438 19.921875 28.523438 Z M 19.921875 28.523438')
+                h3 Advertising services include
+              li
+                svg(xmlns='http://www.w3.org/2000/svg' width='45' viewbox='0 0 45 45' height='45' version='1.0')
+                  defs
+                    clippath#a
+                      path(d='M 13.5 16.503906 L 31.5 16.503906 L 31.5 28.503906 L 13.5 28.503906 Z M 13.5 16.503906')
+                  path(fill='#FFF' d='M-4.5 -4.5H49.5V49.5H-4.5z')
+                  path(fill='#FFF' d='M-4.5 -4.5H49.5V49.5H-4.5z')
+                  g(clip-path='url(#a)')
+                    path(fill='#7ED957' d='M 19.921875 28.523438 C 19.707031 28.523438 19.492188 28.441406 19.328125 28.277344 L 14.195312 23.140625 C 13.867188 22.8125 13.867188 22.28125 14.195312 21.953125 C 14.523438 21.625 15.050781 21.625 15.378906 21.953125 L 19.921875 26.5 L 29.597656 16.8125 C 29.925781 16.484375 30.457031 16.484375 30.785156 16.8125 C 31.113281 17.140625 31.113281 17.671875 30.785156 18 L 20.515625 28.277344 C 20.351562 28.441406 20.136719 28.523438 19.921875 28.523438 Z M 19.921875 28.523438')
+                h3 Search engine marketing
+              li
+                svg(xmlns='http://www.w3.org/2000/svg' width='45' viewbox='0 0 45 45' height='45' version='1.0')
+                  defs
+                    clippath#a
+                      path(d='M 13.5 16.503906 L 31.5 16.503906 L 31.5 28.503906 L 13.5 28.503906 Z M 13.5 16.503906')
+                  path(fill='#FFF' d='M-4.5 -4.5H49.5V49.5H-4.5z')
+                  path(fill='#FFF' d='M-4.5 -4.5H49.5V49.5H-4.5z')
+                  g(clip-path='url(#a)')
+                    path(fill='#7ED957' d='M 19.921875 28.523438 C 19.707031 28.523438 19.492188 28.441406 19.328125 28.277344 L 14.195312 23.140625 C 13.867188 22.8125 13.867188 22.28125 14.195312 21.953125 C 14.523438 21.625 15.050781 21.625 15.378906 21.953125 L 19.921875 26.5 L 29.597656 16.8125 C 29.925781 16.484375 30.457031 16.484375 30.785156 16.8125 C 31.113281 17.140625 31.113281 17.671875 30.785156 18 L 20.515625 28.277344 C 20.351562 28.441406 20.136719 28.523438 19.921875 28.523438 Z M 19.921875 28.523438')
+                h3 Design for print
+    .slide.animate(data-slide='2')
+      section#portfolio
+        #title.section__title
+          h2
+            span.highlights R
+            | ecent works
+          ul.portfolio__menu
+            a(href='')
+              li.portfolio__list.portfolio__list--active(data-type='all') All
+            a(href='#' data-type='photo')
+              li.portfolio__list(data-type='photo') Photo
+            a(href='#' data-type='web')
+              li.portfolio__list(data-type='web') Websites
+            a(href='#' data-type='logo')
+              li.portfolio__list(data-type='logo') Logo
+        .sub-section.portfolio__container
+          .portfolio__overview.portfolio__overview--web(data-type='web')
+            img(src='images/portfolio/bankist.png' alt='bankist')
+            h6 Bankist App
+            a(href='')
+              span View Github
+          .portfolio__overview.portfolio__overview--web(data-type='web')
+            img(src='images/portfolio/mapty.png' alt='')
+            h6 Mapty App
+            a(href='')
+              span View Github
+          .portfolio__overview.portfolio__overview--photo(data-type='photo')
+            img(src='images/portfolio/women_photography_1.png' alt='women')
+            h6 Women
+            a(href='')
+              span Photography
+          .portfolio__overview.portfolio__overview--photo(data-type='photo')
+            img(src='images/portfolio/person_photography_4.png' alt='person')
+            h6 Person
+            a(href='')
+              span Photography
+          .portfolio__overview.portfolio__overview--logo(data-type='logo')
+            img(src='images/portfolio/logo__1.png' alt='snack')
+            h6 Food snack
+          .portfolio__overview.portfolio__overview--logo(data-type='logo')
+            img(src='images/portfolio/logo_2.png' alt='dentist')
+            h6 Dentist Office
+          .portfolio__overview.portfolio__overview--logo(data-type='logo')
+            img(src='images/portfolio/logo_3.png' alt='strwam')
+            h6 Dentist Office
+    .slide.animate(data-slide='3')
+      include _contact
+    script(src='/js/bundle.js')
+    script(defer='' src='js/script.js')

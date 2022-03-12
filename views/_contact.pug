@@ -1,0 +1,21 @@
+section#contact
+        #title.section__title
+          h2
+            span.highlights G
+            | et in touch
+        #map
+        .contact
+          #title.section__title
+            h2
+              span.highlights C
+              | ontact me
+          form.form--contact(method='' autocomplete='on' novalidate)
+            .input-groupe
+              input#name.input(type='name' placeholder='Full name')
+              input#email.input(type='email' placeholder='Email')
+            .input-groupe
+              textarea#subject(rows='4')
+            .input-groupe
+              input.input-btn(type='submit' value='Send message')
+            div#msg__failed Invalid email address 
+            div#msg__success Information has been sent 
