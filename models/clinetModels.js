@@ -5,14 +5,13 @@ const clientSchema = mongoose.Schema({
 
    name: {
 
-       type: String
+       type: String,
 
    },
    email: {
 
       type: String,
       required: [true, "Provide your email address"],
-      unique: true,
       lowercase: true,
       validate: [validator.isEmail, "Please input a valid address email"]
 

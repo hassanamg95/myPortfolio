@@ -1,7 +1,9 @@
 const Client = require('./../models/clinetModels')
 const Email = require('../email')
+const appError = require('./../features/appError')
 
-const createClient  = async (req, res) => {
+
+const createClient  = async (req, res, next) => {
 
     
     try{
@@ -25,15 +27,14 @@ const createClient  = async (req, res) => {
     
     catch(err) {
 
-        res.status(409).json({
+            res.status(400).json({
 
-            status: 'Failed',
-            err
-        })
-    console.log(err.message)
+                status: 'failed',
+                msg:  err.message
+            }) 
+
     }
     
-    // console.log(newClient)
     
 }
 module.exports = createClient

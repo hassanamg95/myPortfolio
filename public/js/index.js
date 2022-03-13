@@ -11,29 +11,23 @@ if(contactForm) {
   contactForm.addEventListener('submit', e => {
 
     e.preventDefault()
+    document.querySelector('.input-btn').value = 'Send ...'
     const name = document.getElementById('name').value
     const email = document.getElementById('email').value
     const subject = document.getElementById('subject').value
-
-    const msgFailed = document.getElementById('msg__failed')
-    const msgSuccess = document.getElementById('msg__success')
+   
     console.log(name, email, subject)
 
-    const emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
-    if(!emailFormat.test(email) ) {
+     
+       
+         setTimeout(() => {
 
-        console.log('not validate')
-        msgFailed.style.display = 'block'
-        msgSuccess.style.display = 'none'
-    }
-    else {
-
-        msgSuccess.style.display = 'block'
-            msgFailed.style.display = 'none'
-            contact(name, email, subject)
-
-    }
+          contact(name, email, subject)
+         return document.querySelector('.input-btn').value = 'Send message'
+         }, 3000 )
+       
+    
+        
     
   })
-
 }

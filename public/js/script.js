@@ -1,7 +1,18 @@
-  
+
+
+document.onreadystatechange = setTimeout(function() {
+  if (document.readyState !== "complete") {
+      document.querySelector("body").style.visibility = "hidden";
+     document.querySelector("#loader").style.visibility = "visible";
+  } else {
+      document.querySelector("#loader").style.display = "none";
+      document.querySelector("body").style.visibility = "visible";
+  }
+}, 1000)
+
   // Slider
-  
-  const slider = function() { 
+  console.log('Hello ')
+    const slider = function() { 
     const slides = document.querySelectorAll('.slide')
     const slider = document.querySelector('.slider')
     const menu = document.querySelectorAll('.menu__list_link')
@@ -18,7 +29,7 @@
        document.querySelector(`.slide[data-slide="${slide}"]`)
        .classList.add('fadeLeft')
        
-        s.style.transform = `translateX(${100 * (i - slide)}%)`
+        s.style.transform = `translateX(${101 * (i - slide)}%)`
   
         
       

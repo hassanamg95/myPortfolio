@@ -10,9 +10,9 @@ app.use(express.static(publicDirectoryPath));
 app.set('view engine', 'pug')
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.urlencoded({ extended: true , limit: '10kb'}))
-app.use('/', clientRouter)
+app.use('', clientRouter)
 
-app.use('/', (req, res) => {
+app.use('', (req, res) => {
 
     res.render('index')
 })

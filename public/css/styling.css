@@ -33,6 +33,22 @@ Text Font : font-family: 'Cormorant Garamond', serif;
 
   
   /**************** End Edit **************/
+  #loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: #222222;
+    z-index: 1000;
+}
+ 
+#loader-wrapper .loader-section.section-left {
+    left: 0;
+}
+ 
+#loader-wrapper .loader-section.section-right {
+    right: 0;
+}
 * {
  
     margin: 0;
@@ -47,7 +63,7 @@ html {
 }
 body {
 
-   
+    visibility: hidden;
     background: #205072;
 }
 .bg__video {
@@ -496,7 +512,7 @@ span.static__side_skills {
     position: relative;
     width: 1px;
     height: 80%;
-    top: -76%;
+    top: -68%;
     left: 103%;
     display: block
 
@@ -650,7 +666,7 @@ span.static__side_skills {
     width: 1px;
     height: 80%;
     top: -78%;
-    left: 95%;
+    left: 100%;
     display: block
 }
 .date__betw {
@@ -951,25 +967,30 @@ textarea:focus,input:focus {
 input.input-btn {
 
    
-    background-color: #fff;
-    border: 2px solid #205072;
-    color: #205072;
-    padding:5px 15px;
-    border-radius: 10px;
-    font-size: 18px;
-    font-family: 'Oswald', sans-serif;
+   
+
+    padding: 10px;
+    background: #205072;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    margin: 2px;
     cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    transition: 0.3 ease-in-out;
 }
 
 #msg__success { 
 
     color: #4BB543;
     display: none;
+    font-size: 16px;
 }
 #msg__failed {
 
     color: #FF9494;
     display: none;
+    font-size: 16px;
 }
 /******************* Make it responsive *******************/
 
