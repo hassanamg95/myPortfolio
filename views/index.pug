@@ -18,22 +18,22 @@ div#loader-wrapper
     nav#nav-menu
       ul.menu__lists
         li.menu__list_link.menu__link--active(data-slide='0')
-          a.menu__links(href='' style='margin-bottom:20px ;')
+          a.menu__links(href='#about' style='margin-bottom:20px ;')
             // <img class="menu__links_img" src="icons/user.svg">
             i.fa-solid.fa-user.menu__links_icon
             |                                    About
         li.menu__list_link(data-slide='1')
-          a.menu__links(href='')
+          a.menu__links(href='#resume')
             // <img class="menu__links_img" src="icons/resume.svg">
             i.fa-solid.fa-book.menu__links_icon
             |                                 Resume
         li.menu__list_link(data-slide='2')
-          a.menu__links(href='')
+          a.menu__links(href='#portfolio')
             // <img class="menu__links_img" src="icons/works.svg">
             i.fa-solid.fa-briefcase.menu__links_icon
             |                             Works
         li.menu__list_link(data-slide='3')
-          a.menu__links(href='')
+          a.menu__links(href='#contact')
             // <img class="menu__links_img" src="icons/contact.svg">
             i.fa-regular.fa-envelope.menu__links_icon
             |                             Contact
@@ -44,20 +44,21 @@ div#loader-wrapper
       h1 Amgharid Hassan
       span.static__side_skills
       ul.social__lists
-        a(href='#facebook')
+        a(href='https://www.facebook.com/hassan.amgharid' target="_blank")
           li.social__icon
             img(src='icons/facebook.svg')
-        a(href='#github')
+        a(href='https://github.com/hassanamg95' target="_blank")
           li.social__icon
             img(src='icons/github.svg')
-        a(href='#instagram')
+        a(href='https://www.instagram.com/hassan.amg/' target="_blank")
           li.social__icon
             img(src='icons/instagram.svg')
-        a(href='#linkedin')
+        a(href='https://www.linkedin.com/in/hassan-amgharid-580ab3168/' target="_blank")
           li.social__icon
             img(src='icons/linkedin.svg')
       .action__btn
         button#download.download__cv Download cv
+          i.fa-solid.fa-download
         button#contact.contact Contact
   #content.slider
     .slide.content__about.animate(data-slide='0')
@@ -346,7 +347,7 @@ div#loader-wrapper
                     path(fill='#7ED957' d='M 19.921875 28.523438 C 19.707031 28.523438 19.492188 28.441406 19.328125 28.277344 L 14.195312 23.140625 C 13.867188 22.8125 13.867188 22.28125 14.195312 21.953125 C 14.523438 21.625 15.050781 21.625 15.378906 21.953125 L 19.921875 26.5 L 29.597656 16.8125 C 29.925781 16.484375 30.457031 16.484375 30.785156 16.8125 C 31.113281 17.140625 31.113281 17.671875 30.785156 18 L 20.515625 28.277344 C 20.351562 28.441406 20.136719 28.523438 19.921875 28.523438 Z M 19.921875 28.523438')
                 h3 Design for print
     .slide.animate(data-slide='2')
-      section#portfolio
+      section#portfolio.section
         #title.section__title
           h2
             span.highlights R
@@ -364,12 +365,12 @@ div#loader-wrapper
           .portfolio__overview.portfolio__overview--web(data-type='web')
             img(src='images/portfolio/bankist.png' alt='bankist')
             h6 Bankist App
-            a(href='')
+            a(href='https://github.com/hassanamg95/Bankist-Javascript-project' target="_blank")
               span View Github
           .portfolio__overview.portfolio__overview--web(data-type='web')
             img(src='images/portfolio/mapty.png' alt='')
             h6 Mapty App
-            a(href='')
+            a(href='' target="_blank" )
               span View Github
           .portfolio__overview.portfolio__overview--photo(data-type='photo')
             img(src='images/portfolio/women_photography_1.png' alt='women')

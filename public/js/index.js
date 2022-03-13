@@ -1,5 +1,5 @@
 import { contact } from './contact'
-
+import { download } from './download'
 import '@babel/polyfill'
 
 const contactForm = document.querySelector('.form--contact')
@@ -29,5 +29,19 @@ if(contactForm) {
     
         
     
+  })
+}
+
+// Handle Download file
+
+const downloadBtn = document.querySelector('.download__cv')
+
+if(downloadBtn) {
+
+  downloadBtn.addEventListener('click', (e) => {
+
+    window.location.replace('/download')
+    console.log(e.target)
+    download()
   })
 }

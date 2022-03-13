@@ -34,7 +34,9 @@ class Email {
          from: this.from,
          to: this.to,
          subject: '< Contact for a service >',
-         text: `${this.subject}`
+         text: `${this.subject}`,
+         DEFAULT_FROM_EMAIL : this.from
+
       }
 
       // Create transport and send email

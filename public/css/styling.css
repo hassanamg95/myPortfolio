@@ -334,6 +334,10 @@ span.static__side_skills {
     flex-direction: row;
    
 }
+.svg-inline--fa{
+
+    margin-left: 10px;
+}
 .static__side .static--side__infos button {
 
     flex: 1;
@@ -1004,11 +1008,11 @@ input.input-btn {
         border-radius: 0px;
         
     }
-    /* .menu__active {
+    .menu__lists {
 
-        display: inline-grid;
+        display: flex;
     }
-    */
+    
     nav#nav-menu {
 
         display: inline-flex;
@@ -1027,4 +1031,5 @@ input.input-btn {
         border-radius: 2px;
         text-align: center;
     }  */
+
 }

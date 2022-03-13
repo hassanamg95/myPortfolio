@@ -10,6 +10,20 @@ document.onreadystatechange = setTimeout(function() {
   }
 }, 1000)
 
+  //  var onResize = function() {
+
+  //     width = document.body.clientWidth
+  //    console.log(width)
+  //     if(width <= 800) {
+      
+      
+
+  //     }
+  //  }
+
+  //  window.addEventListener('resize', onResize)
+
+   
   // Slider
   console.log('Hello ')
     const slider = function() { 
@@ -75,6 +89,7 @@ document.onreadystatechange = setTimeout(function() {
   }
   slider()
   
+  
 
   // Filtering images
 
@@ -116,11 +131,6 @@ tabsContainer.addEventListener('click', function(e) {
     }
     
   }
-  
- 
-  
-
- 
   
 })
 
