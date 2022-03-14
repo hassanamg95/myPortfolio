@@ -6,29 +6,27 @@ const contactForm = document.querySelector('.form--contact')
 
 
 
-// if(contactForm) {
+if(contactForm) {
 
-//   contactForm.addEventListener('submit', e => {
+  contactForm.addEventListener('submit', e => {
 
-//     e.preventDefault()
-//     document.querySelector('.input-btn').value = 'Send ...'
-//     const name = document.getElementById('name').value
-//     const email = document.getElementById('email').value
-//     const subject = document.getElementById('subject').value
+    e.preventDefault()
+    document.querySelector('.input-btn').value = 'Send ...'
+    const name = document.getElementById('name').value
+    const email = document.getElementById('email').value
+    const subject = document.getElementById('subject').value
    
 
-//          setTimeout(() => {
+         setTimeout(() => {
 
-//           window.location.replace('/contact')
-//           contact(name, email, subject)
-//          return document.querySelector('.input-btn').value = 'Send message'
-//          }, 3000 )
+          window.location.replace('/contact')
+          contact(name, email, subject)
+         return document.querySelector('.input-btn').value = 'Send message'
+         }, 3000 )
        
-    
-        
-    
-//   })
-// }
+  
+  })
+}
 
 // Handle Download file
 
