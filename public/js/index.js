@@ -15,33 +15,25 @@ if(contactForm) {
     const name = document.getElementById('name').value
     const email = document.getElementById('email').value
     const subject = document.getElementById('subject').value
-   
-    console.log(name, email, subject)
+contact(name, email, subject)
+        //  setTimeout(() => {
 
-     
+          
+        //  return document.querySelector('.input-btn').value = 'Send message'
+        //  }, 3000 )
        
-         setTimeout(() => {
-
-          contact(name, email, subject)
-         return document.querySelector('.input-btn').value = 'Send message'
-         }, 3000 )
-       
-    
-        
-    
   })
 }
 
 // Handle Download file
 
-const downloadBtn = document.querySelector('.download__cv')
+// const downloadBtn = document.querySelector('.download__cv')
 
-if(downloadBtn) {
+// if(downloadBtn) {
 
-  downloadBtn.addEventListener('click', (e) => {
+//   downloadBtn.addEventListener('click', (e) => {
 
-    window.location.replace('/download')
-    console.log(e.target)
-    download()
-  })
-}
+//     window.location.replace('/download')
+//     download()
+//   })
+// }

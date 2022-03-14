@@ -10,12 +10,7 @@ document.onreadystatechange = setTimeout(function() {
   }
 }, 1000)
 
-  //  var onResize = function() {
-
-  //     width = document.body.clientWidth
-  //    console.log(width)
-  //     if(width <= 800) {
-      
+ 
       
 
   //     }
@@ -25,8 +20,8 @@ document.onreadystatechange = setTimeout(function() {
 
    
   // Slider
-  console.log('Hello ')
-    const slider = function() { 
+
+  const slider = function() { 
     const slides = document.querySelectorAll('.slide')
     const slider = document.querySelector('.slider')
     const menu = document.querySelectorAll('.menu__list_link')
@@ -124,7 +119,6 @@ tabsContainer.addEventListener('click', function(e) {
 
       displayAll()
      }
-    console.log(toShow)
      for(var i = 0; i < toShow.length; i++) {
 
       toShow[i].classList.add('portfolio__overview--active')
