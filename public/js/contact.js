@@ -10,7 +10,7 @@ export const contact = async (name, email, subject) => {
         const res = await axios({
           
             method: 'POST',
-            url: '',
+            url: '/',
             data: {
 
                 name,
