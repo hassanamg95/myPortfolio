@@ -734,7 +734,7 @@
     "@babel/plugin-transform-runtime": "^7.17.0",
     "@babel/polyfill": "^7.4.4"
   },
-  "engine": {
+  "engines": {
 
     "node": ">=10.0.0"
   }
