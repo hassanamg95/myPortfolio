@@ -22,7 +22,7 @@ const createClient  = async (req, res, next) => {
             }
         })
         
-      await new Email(req.body.email, req.body.subject).send()
+    //   await new Email(req.body.email, req.body.subject).send()
     }
     
     catch(err) {
