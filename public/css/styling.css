@@ -64,7 +64,7 @@ html {
 }
 body {
 
-    visibility: hidden;
+    /* visibility: hidden; */
     background: #205072;
 }
 .bg__video {
