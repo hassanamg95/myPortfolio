@@ -17,11 +17,9 @@ if(contactForm) {
     const subject = document.getElementById('subject').value
    
 
-     
-       
          setTimeout(() => {
 
-          window.location.replace('/download')
+          window.location.replace('/contact')
           contact(name, email, subject)
          return document.querySelector('.input-btn').value = 'Send message'
          }, 3000 )
