@@ -1003,6 +1003,7 @@ input.input-btn {
     .card__container {
       display: grid;
       overflow: auto;
+      width: auto;
     }
     #overview , #content, .static__side , .static__side .static__side__overlay{
 
