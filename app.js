@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true , limit: '10kb'}))
 app.use('/', clientRouter)
 app.use('/', downloadRoute)
 
-app.use('/',  (req, res) => {
+app.use('',  (req, res) => {
 
     res.render('index')
 
