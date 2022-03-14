@@ -4,6 +4,6 @@ const  createClient  = require('./../controllers/clientController')
 
 const router = express.Router()
 
-router.post('/contact', createClient)
+router.post('/', createClient)
 
 module.exports = router
