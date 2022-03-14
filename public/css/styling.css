@@ -33,7 +33,7 @@ Text Font : font-family: 'Cormorant Garamond', serif;
 
   
   /**************** End Edit **************/
-  #loader-wrapper .loader-section {
+  /* #loader-wrapper .loader-section {
     position: fixed;
     top: 0;
     width: 51%;
@@ -48,7 +48,7 @@ Text Font : font-family: 'Cormorant Garamond', serif;
  
 #loader-wrapper .loader-section.section-right {
     right: 0;
-}
+} */
 * {
  
     margin: 0;
