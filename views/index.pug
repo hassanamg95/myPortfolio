@@ -1,5 +1,10 @@
 include _head
-
+div#loader-wrapper
+  div#loader
+    div.loader-section.section-left
+    div.loader-section.section-right
+ 
+</div>
 .bg__video
   video.bg__video_content(autoplay='' muted='' loop='')
     source(src='/images/background_video.mp4' type='video/mp4')
@@ -388,5 +393,6 @@ include _head
             h6 Dentist Office
     .slide.animate(data-slide='3')
       include _contact
+    
     script(src='/js/bundle.js')
-    script(defer='' src='js/script.js')
+    

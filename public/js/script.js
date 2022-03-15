@@ -1,14 +1,14 @@
 
 
-// document.onreadystatechange = setTimeout(function() {
-//   if (document.readyState !== "complete") {
-//       document.querySelector("body").style.visibility = "hidden";
-//      document.querySelector("#loader").style.visibility = "visible";
-//   } else {
-//       document.querySelector("#loader").style.display = "none";
-//       document.querySelector("body").style.visibility = "visible";
-//   }
-// }, 1000)
+document.onreadystatechange = setTimeout(function() {
+  if (document.readyState !== "complete") {
+      document.querySelector("body").style.display = "hidden";
+     document.querySelector("#loader").style.visibility = "visible";
+  } else {
+      document.querySelector("#loader").style.display = "none";
+      document.querySelector("body").style.visibility = "visible";
+  }
+}, 1000)
 
  
       
