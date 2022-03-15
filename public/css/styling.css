@@ -34,22 +34,24 @@ Text Font : font-family: 'Cormorant Garamond', serif;
 
   
   /**************** End Edit **************/
-  #loader-wrapper .loader-section {
-    position: fixed;
-    top: 0;
-    width: 51%;
-    height: 100%;
-    background: #205072;
-    z-index: 1000;
-}
- 
-#loader-wrapper .loader-section.section-left {
-    left: 0;
-}
- 
-#loader-wrapper .loader-section.section-right {
-    right: 0;
-}
+
+  .loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    visibility: visible;
+    top: 40%;
+    left: 45%;
+    position: absolute;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
 * {
  
     margin: 0;
@@ -64,7 +66,7 @@ html {
 }
 body {
 
-    /* visibility: hidden; */
+    visibility: hidden;
     background: #205072;
 }
 .bg__video {
